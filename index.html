@@ -378,16 +378,16 @@
 </svg></span>
 </label>
 
-<label class="modal-form-field">Комментарий
-    <textarea class="modal-form-message" name="user-message" placeholder="Введите текст" >
-    </textarea>
+<label class="modal-form-field form-field-comment">Комментарий
+    <textarea class="modal-form-message" name="user-message" placeholder="Введите текст"></textarea>
     
     </label>
 
-<label class="modal-form-field form-field-comment">
-    <input type="checkbox" name="agree" value="offer" checked />
-    Соглашаюсь с рассылкой и принимаю <a href="https://store.steampowered.com/subscriber_agreement/russian/" target="_blank">Условия договора</a>
-</label>
+
+    <input class="modal-form-checkbox visually-hidden" id="accept-policy" type="checkbox" name="agree" value="offer" checked />
+    
+<label for="accept-policy" class="modal-form-field modal-form-checkbox-label">Соглашаюсь с рассылкой и принимаю&nbsp;<a href="https://store.steampowered.com/subscriber_agreement/russian/" class="link link-modal"
+    target="_blank">Условия договора</a></label>
 
 <button class="btn-modal-submit" type="submit">Отправить</button>
 </div>
