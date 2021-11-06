@@ -690,7 +690,7 @@ body {
   justify-content: center;
 }
 
-.modal-btn:hover{
+.modal-btn:hover {
   fill: var(--background-text-color);
 }
 
@@ -716,14 +716,13 @@ body {
   margin-bottom: 12px;
 }
 
-
 .modal-form-field {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.01em;
   margin-bottom: 10px;
-  color: var(--second-text-color)
+  color: var(--second-text-color);
 }
 
 .modal-form-field:nth-child(5) {
@@ -792,13 +791,20 @@ body {
 .btn-modal-submit {
   /* display: block; */
   align-self: center;
+  cursor: pointer;
   width: 200px;
   height: 50px;
   background-color: var(--background-text-color);
   border-radius: 4px;
   color: var(--header-color);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-modal-submit:focus,
+.btn-modal-submit:hover {
+  box-shadow: var(--shadow-all--);
 }
 
 .modal-form-checkbox-label {
@@ -834,16 +840,15 @@ body {
   border-color: var(--background-text-color);
 }
 
-.modal-form-checkbox:focus + .modal-form-checkbox-label::before{
+.modal-form-checkbox:focus + .modal-form-checkbox-label::before {
   outline: 1px solid var(--third-text-color);
 }
 
-.link-modal:visited{
+.link-modal:visited {
   color: #2196f3;
 }
 
 .link-modal::after {
-  
   display: block;
   content: "";
   width: 127px;
@@ -853,11 +858,6 @@ body {
   color: var(--background-text-color);
   background-color: var(--background-text-color);
 }
-/* .link-modal:hover,
-.link-modal:focus {
-  /* border-bottom: 1px solid var(--background-text-color); */
-  /* text-decoration: underline; */
-} */
 
 /* портфолио */
 .btn {
