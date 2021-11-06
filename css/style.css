@@ -604,11 +604,6 @@ body {
   margin-right: 70px;
 }
 
-.footer-right-submit {
-  width: 570px;
-  height: 86px;
-}
-
 .footer-social {
   display: flex;
   flex-direction: row;
@@ -778,12 +773,11 @@ body {
   margin-bottom: 12px;
 }
 
-.modal-form-field {
+.form-field-subscribe {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.01em;
-  margin-bottom: 10px;
   color: var(--second-text-color);
 }
 
