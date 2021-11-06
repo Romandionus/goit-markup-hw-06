@@ -690,6 +690,10 @@ body {
   justify-content: center;
 }
 
+.modal-btn:hover{
+  fill: var(--background-text-color);
+}
+
 /* форма в модалке */
 .form {
   width: 448px;
@@ -712,12 +716,14 @@ body {
   margin-bottom: 12px;
 }
 
+
 .modal-form-field {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.01em;
   margin-bottom: 10px;
+  color: var(--second-text-color)
 }
 
 .modal-form-field:nth-child(5) {
@@ -826,6 +832,10 @@ body {
   background-position: 50%;
   background-size: contain;
   border-color: var(--background-text-color);
+}
+
+.modal-form-checkbox:focus + .modal-form-checkbox-label::before{
+  outline: 1px solid var(--third-text-color);
 }
 
 .link-modal:visited{
