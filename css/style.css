@@ -678,13 +678,16 @@ body {
   padding-right: 28px;
   justify-content: space-between;
   padding-left: 29px;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-subscribe:focus,
 .btn-subscribe:hover {
   box-shadow: var(--shadow-all--);
 }
+
 .footer-right {
   margin-right: auto;
 }
