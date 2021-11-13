@@ -923,6 +923,9 @@ body {
   outline: 1px solid var(--background-text-color);
   border-color: var(--background-text-color);
 }
+.link-modal{
+  color: var(--background-text-color);
+}
 
 .link-modal:visited {
   color: var(--background-text-color);
